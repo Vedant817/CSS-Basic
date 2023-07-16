@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            background-color: red;
+            height: 100VH;
+        }
+
+        .box {
+            border: 2px solid black;
+            display: inline-block;
+            /* transform: translate(134px, 56px) rotateX(45deg);
+            transform-origin: 0; */
+        }
+
+        .box:hover {
+            width: 56px;
+        }
+
+        .img {
+            transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage" src="https://th.bing.com/th/id/OIP.avb9nDfw3kq7NOoP0grM4wHaEK?pid=ImgDet&rs=1"
+                width="250px" alt="" />
+        </div>
+    </div>
+</body>
+<script>
+    btn.addEventListener("click", () => {
+        myImage.style.width = "546px";
+    });
+</script>
+
+</html>

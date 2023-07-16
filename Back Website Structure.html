@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Standard Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Horizontal {
+            background-color: black;
+            color: white;
+            height: 50px;
+        }
+
+        .Left {
+            background-color: red;
+            width: 50%;
+            height: 100px;
+            display: inline-block;
+        }
+
+        .Right {
+            background-color: green;
+            width: 50%;
+            height: 100px;
+            display: inline-block;
+        }
+
+        nav ul li {
+            /* height: 70px; */
+            background-color: aqua;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="Horizontal">
+        <center>This is the standard layout of the Website</center>
+    </div>
+    <div class="Left">Hello!!</div><div class="Right">Hii!!</div>
+    <!-- Space between the div should be removed so that it produces both divs side by side. -->
+
+</body>
+
+</html>

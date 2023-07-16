@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Font</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box1 {
+            background-color: red;
+            /* width: 75px;
+            height: 100px; */
+            display: inline;
+            /* While using inline style setting width and height is not allowed. */
+            border-color: aqua;
+            border-style: dotted;
+        }
+
+        .box2 {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            background-color: blue;
+            width: 100px;
+            height: 150px;
+            display: inline-block;
+            /*Here inline block both width and height will bw respected*/
+        }
+
+        .box3 {
+            display: none;
+            /*
+            This removes the content written inside it.
+            The space is not reserved where as it is reserved in Visibility.
+           */
+        }
+
+        .box4{
+            display:hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <!-- When we inspect this box we find that the lower bpx doesn't comes at the side while it comes at bottom bec whether the width is defined but it occupies full space. -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ex!
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores facere officia placeat repudiandae ad
+        asperiores.
+    </div>
+    <div class="box3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestiae libero distinctio reiciendis tempora,
+        saepe, consectetur possimus quam incidunt eligendi, fugit esse alias vel.
+    </div>
+    <div class="box4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, laborum.
+    </div>
+</body>
+
+</html>

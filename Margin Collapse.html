@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: red;
+            height: 300px;
+            width: 233px;
+            margin: 30px;
+            padding: 20px;
+        }
+
+        .box2 {
+            background-color: aqua;
+            /* margin: 40px; */
+            height: 130px;
+            width: 100%;
+            padding: 10px;
+            border: 5px solid rgb(20, 248, 4);
+            box-sizing: border-box;
+        }
+
+        /*
+        Now when margin is there in both the case then it will be shared between the both  and common value will be biggest one betweeen both values.
+        */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio molestiae saepe quas officia delectus
+        perspiciatis iste consequuntur illum quos consequatur. Aliquam praesentium est neque aut debitis architecto
+        totam. Expedita, esse?
+        <div class="box2">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem eaque dolor labore suscipit in amet pariatur
+            aliquam sed tenetur assumenda!
+        </div>
+    </div>
+</body>
+
+</html>

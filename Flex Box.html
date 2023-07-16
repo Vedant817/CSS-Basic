@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: aquamarine;
+            height: 200vh;
+            /* align-items: center; */
+            align-content: center;
+            /*Align content  is preferred because when we 
+            wrap the project then no extra space will be 
+            given in between.
+            */
+        }
+        .box{
+            height: 234px;
+            width: 345px;
+            background-color: blue;
+            border: 2px solid black;
+            /* align-self: flex-end;
+            order: 4; */
+            /* float:left; */
+        }
+        .box2{
+            height: 234px;
+            width: 345px;
+            background-color: red;
+            border: 2px solid black;
+            /* float: right;
+            clear: both; */
+        }
+        .box3{
+            height: 234px;
+            width: 345px;
+            background-color: red;
+            border: 2px solid black;
+            /* float: right;
+            clear: both; */
+        }
+        .box4{
+            height: 234px;
+            width: 345px;
+            background-color: red;
+            border: 2px solid black;
+            /* float: right;
+            clear: both; */
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Axis is always horizontal along which items get render where as Cross axis is not always vertical it depends upon the flex box. -->
+    <div class="container">
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    </div>
+</body>
+</html>
