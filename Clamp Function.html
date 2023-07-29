@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clamp Function</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 30px;
+        }
+        .parent{
+            background-color: greenyellow;
+            width: 800px;
+        }
+        .child{
+            background-color: yellow;
+            width: clamp(250px,40%,900px); /*This function takes 3 values min, preferred and maximum.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            Child
+        </div>
+    </div>
+</body>
+</html>

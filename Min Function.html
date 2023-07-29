@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min() Function</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 30px;
+        }
+        .element{
+            background-color: pink;
+            margin-bottom: 30px;
+            width: min(50%,500px);
+            /*? The above property will set parameter given the value which is minimum from the given choices and values can be in any format same or different. */
+        }
+        .parent{
+            width: 1200px;
+            background-color: greenyellow;
+        }
+        .child{
+            background-color: yellow;
+            width: min(50%,500px); /*50% of parent div.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="element">
+        Hello
+    </div>
+    <div class="parent">
+        <div class="child">
+            Child
+        </div>
+    </div>
+</body>
+</html>
